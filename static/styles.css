@@ -1,0 +1,77 @@
+/**
+ * Assignment 2
+ * GitHub: https://github.com/MaySetter/Mitzi-Net
+ * Submitted by:
+ * Student 1. May Seter  ID# 312123037
+ * Student 2. Dmitry Ignatiev  ID# 316810910
+ **/
+
+/* Internal CSS for body background color */
+body {
+    font-family: Arial, serif;
+    background-color: orange;
+}
+/* Contains all the visual elements of class in web page. Changes size depending on browser's size */
+.flex-container {
+    flex-direction: column; /* elements arranged in a column*/
+    width: 80%; /* 80% of web page's size */
+    margin: 50px auto; /* auto - The browser selects a suitable margin to use */
+    padding: 20px;
+    text-align: center;
+    background-color: powderblue;
+    border-radius: 10px; /* Rounding containers corners */
+}
+/* flex for element with name id containing name inputs. Arranges them in a row */
+#names {
+    display: flex;
+    flex-direction: row;
+}
+/* Logo class */
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+/* Margin between form-group class elements */
+.form-group {
+    margin-bottom: 15px;
+}
+/* Input elements in form-group class */
+.form-group input {
+    text-align: right; /* for compatibility with hebrew*/
+    width: 50%; /* width of input boxes */
+    padding: 10px; /* length (y-axis) of input boxes*/
+    border: 1px solid darkgray;
+    border-radius: 5px; /* rounding of the boxes */
+}
+/* Input boxes in form-group class turns orange when mouse hovers over */
+.form-group input:hover{
+    border-color: orange;
+}
+
+/* Button element */
+button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white; /* text */
+    border-radius: 10px; /* Rounds the corners of button */
+}
+
+/* Changes cursor and background color when mouse hovers over buttom */
+button:hover {
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+/* Elements with Id's */
+#name_error, #tel_error, #email_error, #password_error, #confirm_error {
+    position: relative;
+    color: red;
+    font-size: 12px;
+}
+
+.delete-form-group input {
+    text-align: right; /* for compatibility with hebrew*/
+    padding: 10px; /* length (y-axis) of input boxes*/
+    border: 1px solid darkgray;
+    border-radius: 5px; /* rounding of the boxes */
+}

@@ -1,0 +1,69 @@
+<!--
+* Assignment 2
+* GitHub: https://github.com/MaySetter/Mitzi-Net
+* Submitted by:
+* Student 1. May Seter  ID# 312123037
+* Student 2. Dmitry Ignatiev  ID# 316810910
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitzi-Net Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="flex-container">
+    <h1 style="font-family: 'Guttman Haim', serif; margin-bottom: 0;">מיצי-נט</h1>
+    <div class="logo">
+        <img src="logo.png" alt="Store Logo">
+    </div>
+    <h4>
+        !"ברוכים הבאים למועדון הלקוחות של "מיצי-נט<br>
+        .'אנחנו כאן כדי לחלוק ידע בנוגע לחיות המחמד שלנו, מחירים, בריאות וכו
+    </h4>
+    <h6>.אנא כבד את זכויות המשתמשים האחרים במועדון זה ואת זכויות החנות על המוצרים</h6>
+    <form id="registrationForm">
+        <div class="form-group">
+            <div id="names">
+                <input type="text" id="lastName" placeholder="שם משפחה" required>
+                <input type="text" id="firstName" placeholder="שם פרטי" required>
+            </div>
+            <p style="position: relative; bottom: 10px" id="name_error"></p>
+        </div>
+        <div class="form-group">
+            <input type="tel" id="phoneNumber" placeholder="מספר טלפון" required>
+            <p id="tel_error"></p>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" placeholder="*כתובת אימייל" required>
+            <p id="email_error"></p>
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" placeholder="*סיסמה" required>
+            <p id="password_error"></p>
+        </div>
+        <div class="form-group">
+            <input type="password" id="passwordConfirm" placeholder="*וידוא סיסמה" required>
+            <p id="confirm_error"></p>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit">הרשמה</button>
+        </div>
+    </form>
+    <form id="delete_form">
+        <!-- Delete Me Button -->
+        <div class="delete-form-group">
+            <input type="email" id="delete_email" placeholder="מייל למחיקה" required>
+            <input type="password" id="delete_password" placeholder="סיסמא" required>
+            <button type="button" id="deleteButton">מחק</button>
+        </div>
+    </form>
+    <div id="message"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
