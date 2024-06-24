@@ -1,9 +1,6 @@
 ﻿/**
  * Assignment 2
  * GitHub: https://github.com/MaySetter/Mitzi-Net
- * Submitted by:
- * Student 1. May Seter  ID# 312123037
- * Student 2. Dmitry Ignatiev  ID# 316810910
  **/
 
 // event listener for when submit button is clicked, activate register_clicked() function
